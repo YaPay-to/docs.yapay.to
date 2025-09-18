@@ -1,0 +1,71 @@
+---
+id: create-webhook-endpoint
+title: "Create a Webhook Endpoint"
+description: "Creates a new webhook endpoint for receiving event notifications"
+sidebar_label: "Create a Webhook Endpoint"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV01v3DYQ/SvEnOVdO0l70KlJayAu0sbwB4LCWRiz4uyKsUQqQ2ptxdj/Hgwpab/cOAhy6KG+eEUOhzNv3jyNHiHg0kN+Ax9oXjp352GWgSZfsGmCcRZy+J0JA3mFytK9uk92iqxunLFBLRwrpoLMytilohXZoKwLZmEKFA8eMnANcXw405BDER32F572fiADps8t+fDG6Q7yx/homDTkgVvKoHA2kA2yhU1T9e6nn7xE+Qi+KKlG+RW6hiAHN/9ExeA3ObqBlivIIEYZU21YYguGvJyU3Y0DH9jYJWSwcFxjgBxaNrAPz/XFOxWc8mT1BpzoXwUH6/GyjV9kxg4yMIFq/9R9ZNtagm2wq8mGSQJMQzau+LYoiPTO2gJNtbNQoC2oSmtFScWda8PEk/fG2Unh6qai8PQmPTQRMMFu0Vq9FUG/sB1Av9TfP1tnUBt7lpI72YfrdIBG+XYuG3PqcdqxOwRl180fmyflFiqUdMBMWK8zCCZUNJJ4j3MXiXCwXospk2+c9YkJL46P5d/upR/2ud/DoiIa3i/aqpLC/jBTd9lo9PM4XFvzuSVlNFlpOWKhzwNKbSGHe7o9wXnxQtPi5bI0gnJ/1zdY1+N4O+IoFf2ezvgBrgvungqmJyPaTfUy2kW9WRGbRSd6MxTdm6XF0DL5XQBKT8XtQ/fl5MVLnBevfvlVovQBQ/vNziOL89Q42vj0U1AY2mBz0thAy4j6QV0eVDA1+YB1IxSNZ2Vzm5b7IpiY+Oop8r1BrXqF/HkUI2bHz5ul3X+HCxtzm1xlgG0ohYwponHZ2BVWRt9uUmAMdFuZ2oTRKJpsn4tiQt7j8sn7dxF629Zoj5hQS8VU9KCG01I9p7/Dy19YlMbSvp94OJVnKN5pDHEo2clhyV7vQKFGgf6/eP+l4sUoQ+lkNGlczK7BUEIO015d/HTQQlEXT7wilqGpHxigDKHx+XTaYYPdJLgpNma6OjmI7pydbovIheQE1tm+D49Wz93D5Dlfl8ludDSLQtqyCV2MbE7IxMJAyG9m29uXQq9EjW2jEVqJRNKMZpD3RocK50l1rmX1+vxM3VGn0MfXcDJXwd1R0jqh9cVmtDsdxHnIfEPI/uVxOPgczKTD60OouXAx+L6u/+A5dhLTQcBXJalxVxmvHC/Rmi+kFbJrrVYXp5dXqmFjC9NU5CfqfZ9eiV41TNoUIbKKybuWCzpybMjKBHB98c5nHy0WBTXBy0uqPiIrvNPKsfrz8v3fg3qrudOGfKaYQsvWx83ReJxCMoVWq9aTVz6g1chavb26Ov9oB5NIa7Hbadp0bkU895OPVvqS2CcETibHk+NefzANAVSjkSJgY34bKCewVqYg62OVLEYanLNr2FBA7mJZpVVqtFsWacZSqIY5aWu23xvuRgX8GV8XPW8DPYRpU6GxsBlYUiePQ02cDsZenmVQSsPnN/D4OEdP11yt17L8uSWWPpqJrLGRosc2yqAk1MSxxe6okwRSKkdXEkVUwTYOPvvCLq2eTryOJPmm7WxLk87fX15BBvP+s6iOQgiM91GG7yGH+IWV0JDvJll7hArtso3SC8mn/H0FL3bntQ==
+sidebar_class_name: "post api-method"
+info_path: docs/api/yapay-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a Webhook Endpoint"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/webhooks/endpoints"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Creates a new webhook endpoint for receiving event notifications
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["url","events"],"properties":{"url":{"type":"string","format":"uri","description":"URL to send webhook events to"},"events":{"type":"array","items":{"type":"string","enum":["payment.created","payment.succeeded","payment.failed","payment.cancelled","checkout.session.completed","checkout.session.expired","refund.created","refund.succeeded","refund.failed"]},"minItems":1,"description":"Events to subscribe to"},"description":{"type":"string","description":"Description of the webhook endpoint"}},"title":"CreateWebhookEndpointRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Webhook endpoint created successfully","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier","example":"we_1abc2def3ghi"},"object":{"type":"string","enum":["webhook_endpoint"]},"url":{"type":"string","format":"uri"},"events":{"type":"array","items":{"type":"string"}},"secret":{"type":"string","description":"Secret for verifying webhook signatures","example":"whsec_xyz123abc456"},"status":{"type":"string","enum":["enabled","disabled"]},"created":{"type":"integer","description":"Unix timestamp of creation"}},"title":"WebhookEndpoint"}}}},"400":{"description":"Bad request","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}},"401":{"description":"Authentication failed","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

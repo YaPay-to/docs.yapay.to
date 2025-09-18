@@ -1,0 +1,71 @@
+---
+id: confirm-payment
+title: "Confirm a Payment Intent"
+description: "Confirms a payment intent with payment method details"
+sidebar_label: "Confirm a Payment Intent"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWM1u2zgQfhWCl90FlNhpe/KpaVqgKbZtkDjYXaSGMRbHERuJVIdUGtXQA+1z7IsthpRsyXab9OfQQ32xTQ4/zv8PV9LDtZOTK3kGdYHGOzlLpEKXki69tkZO5Ik1S02FEyDKSCS08fz1UftsvVagz6wSCj3o3MlE2hIJGONUyYlMI0p7jUxkCQQFeiS+fiUNFCgnskWbayUTqU1Y8ZlMJOGHShMqOfFU4TaP0wzF6XNhl8JnuMWmTKRLMyxATlbS1yVf4zxpcy2bZhaR0flnVtVMsX1RaiPKZCWhLHOdBplG7x1fvNqFtov3mPoBx1drsaKSgvRxoVPXLJElsca8RsdoWyd2WE8kmqpg7BSIERdgbuaewLgl0q4Vz4Zm8lZUDmWzy8keSYaceXuDZh9D+y+M5InEOyjKnA94ezO/1Q5k0zRNIr32Yflk4CHn0SotDaErrXGRgUfjMX/tv671M1TCVWmKzi2rPK/ld9hxKL3ea4shL5dGf6hQaIXG66VGEktL+z1zo5US6vkRLNJHCpePrzPNtml5+ILx1/ESAWdbiP29JpFQ2Mr08XjrGumzxosHhDbCFZDn6LxIKyI0aS0qowcSHI3H43GTyI7gfj1NM0I8yNF7JHF68XaDnVqFA+28/vsNC+A8+Mp9USFoVFwJ9keFHBxL0Hn4kYJJMeffu3kuXO5FvGMrl/Dlaa5ZnQ5Twr1G2cIL5CKSBw9YUvBB1Tlp8MB+DMbg7MsHRMDeqz0We+Ruti89vgWdwyLHrbzsggCV87ZAut/LsQCd7xNxaZltOWkpdnUYb/jNiUAgQClC5wa27Nh42i4dprZg9mIJuFetmys4tEU41Yd/VYERZ//9S/hJDvJLJ32TyAI9KPB74x2U0nwX5GfDvLdVOhIZsi2kkbEfkTimG0Bx+nyYNO/M/Oiu/vQIFuljhcuvCuc+bnvoqwL1ZBCXOw778GLQVp/KoQocEIJH9QAJLo2+E14X6DwU5cCuPeG+B5MDPpxtcfCu1IRuDg9R8C5UOL4Gy/UtFqy7DdTC2hzB7ED9laHPkMuFdkJz18WHBZ8eJKMukX0rgy3AmsX+/zkhOPuAIn8e6EJyG+L17NPa/rStQqGeP9lXwp+BEm0z9uPqNRLZByS8uPv5sgKlnkeoRELlM67skaP1sja3kGs134hA4HGe60L7NVEg6Z+bhWzkHFw/IPe9rAowB4SgQooPCKI7zTYcuthnUF5DmmmD2zgxtgct2YvAYmeyo12THQ9UITZl9pfxfjLjPdk13jk6W1GKwljuTyrzy3I/m+ViqxJKrCyti3Ozz+REjtpa4EarzczcjNrOkttfpNtuuK4olxOZeV+6yWhUQwn1obcjKPXo9mi3WJNVVWwWIohskm0MB0Yt7N3hfVgXkW4NNGPG0oq0rwNnCwRC4jQiJ1ez/vYFe1r0kj7RWsvMSTfah3oaiHYLn0NR24rE8dmpuMFagAt9fSRvp1PWM3v4+eYp4EXXee2O4t3EvW9yjrNxf8RlD13asNma9x84g5r52TMQoVjvcvG3dA1Gf0IlgDhAxfmLi6koSZtUlzm6Q/G2FS0DJ0pCpVMfnIva4D6wxGMIKnF5/qdL3hlIUyy945pdHKBh91PCknh18fZNV37FwiqNLhGEviLjwuaaeD2MJwJMaOYcD01GASnxcjo9e2c6kuDdTDeI3XjuFmnhDt9xB8SOGjVwdDg+HLdpCOLo284inAuedu4We6oUjQsWah+PuF8njR6oDorniCnA9CjaNwYBoutIT7tJfGCJ1SYPfvP7V+unHu/8qMxBhy4rRNGqDeL1+M7kk8HTVxfHs0RmHPeTK7laLcDhJeVNw8sfKiSOoRlnN9Js9BBRSjv+reRkCbnbfinrC/b7eftC9Ye45/1sryjdhGrqmGAr/icTeYP18CGv4WSbISiePK9WLcFJ5ONgyjAbgJ2iw7knnjgOnvtF2lkvX569vZjyu1j7rhfbb0nwMZSIj5FZG/QSYjesrWQO5roKZUFGTP78Dyw0dd0=
+sidebar_class_name: "post api-method"
+info_path: docs/api/yapay-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Confirm a Payment Intent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/payments/{payment_id}/confirm"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Confirms a payment intent with payment method details
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"payment_id","in":"path","required":true,"description":"The ID of the payment intent","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["payment_method","payment_details"],"properties":{"payment_method":{"type":"string","enum":["card","bank_transfer"],"description":"Payment method to use"},"payment_details":{"type":"object","properties":{"token":{"type":"string","description":"Payment token","example":"tok_visa"}}}},"title":"ConfirmPaymentRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Payment confirmed successfully","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the payment intent","example":"pay_1abc2def3ghi"},"object":{"type":"string","enum":["payment_intent"],"example":"payment_intent"},"amount":{"type":"integer","description":"Payment amount in smallest currency unit","example":10000},"currency":{"type":"string","description":"Three-letter ISO currency code","example":"MXN"},"status":{"type":"string","enum":["pending","succeeded","failed","cancelled"],"description":"Current status of the payment"},"client_secret":{"type":"string","description":"Client secret for frontend confirmation"},"payment_methods":{"type":"array","items":{"type":"string"},"description":"Available payment methods"},"customer":{"type":"object","properties":{"email":{"type":"string","format":"email","description":"Customer's email address","example":"customer@example.com"},"name":{"type":"string","description":"Customer's full name","example":"Juan Pérez"}},"title":"Customer"},"metadata":{"type":"object","additionalProperties":{"type":"string"}},"transaction":{"type":"object","properties":{"id":{"type":"string","description":"Transaction ID","example":"txn_1xyz2abc3def"},"amount":{"type":"integer","description":"Transaction amount"},"currency":{"type":"string","description":"Currency code"},"payment_method":{"type":"string","description":"Payment method used"},"created":{"type":"integer","description":"Unix timestamp"}},"title":"Transaction"},"created":{"type":"integer","description":"Unix timestamp of creation"},"expires_at":{"type":"integer","description":"Unix timestamp of expiration"},"livemode":{"type":"boolean","description":"Whether this is a live mode payment"},"cancelled_at":{"type":"integer","description":"Unix timestamp of cancellation"},"cancellation_reason":{"type":"string","description":"Reason for cancellation"}},"title":"PaymentIntent"}}}},"400":{"description":"Bad request","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}},"401":{"description":"Authentication failed","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}},"404":{"description":"Resource not found","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

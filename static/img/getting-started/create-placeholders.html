@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Placeholder Images</title>
+    <style>
+        .placeholder {
+            width: 1200px;
+            height: 800px;
+            background: linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 24px;
+            opacity: 0.9;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-page" class="placeholder">
+        <div class="title">MedicVizor Login</div>
+        <div class="subtitle">Patient Portal Access</div>
+    </div>
+    <button onclick="downloadImage('login-page', 'login-page.png')">Download Login Page</button>
+
+    <div id="provider-dashboard" class="placeholder">
+        <div class="title">Provider Dashboard</div>
+        <div class="subtitle">Manage Your Practice</div>
+    </div>
+    <button onclick="downloadImage('provider-dashboard', 'provider-dashboard.png')">Download Provider Dashboard</button>
+
+    <div id="org-dashboard" class="placeholder">
+        <div class="title">Organization Dashboard</div>
+        <div class="subtitle">Healthcare Management Portal</div>
+    </div>
+    <button onclick="downloadImage('org-dashboard', 'org-dashboard.png')">Download Org Dashboard</button>
+
+    <script>
+        function downloadImage(elementId, filename) {
+            // Note: This requires html2canvas library to work
+            alert(`To generate the image:\n1. Take a screenshot of the ${elementId} div\n2. Save it as ${filename}\n3. Place it in the static/img/getting-started/ folder`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+---
+id: get-payment
+title: "Retrieve a Payment Intent"
+description: "Retrieves the details of an existing payment intent"
+sidebar_label: "Retrieve a Payment Intent"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV81u20YQfpXFXtoCtCQnOekUIwkaBU0i2DLaIhGEEXckbkLuMrNLQ4zAB8pz9MWKWZISKSq1k+bQQ0+WuTPf/P/tpYetk9N3cg5lhsY7uYykQheTzr22Rk7lNXrSeIdO+ASFQg86dcJuBBiBO+28NluR1+xCG4/Gy0jaHAkYYabkVG7RNwJkJHMgyNAjseC9NJChnMoGYaWVjKQ24YtPZCQJPxWaUMmppwJPtVskKGbPWR3WbqCGixPMQE730pc5i3GetNnKqloyssutcej4/dFkwn/66PMeXmu8jGRsawnTvYQ8T3UcbB1/cMy2H4q16w8YB+OJPeN1LVSroWqnFt4a/alAoRUarzcaSWwsnbcWd5DlaePN1SWs40cKN4+3iZZV1OpwRiCaIuMkOMSgBlyeIHbfqkhCZgvTxeOnLdLAgtaLNYPQRrgM0hSdF3FBhCYuRWF0z4LLyWQyqSLZEtzvp0VCiBcpeo8kZjdvj9ixVdjzzus/3rABzoMv3D86BI2qv7gijhEVcnZuQKfhRwwmxpR/D6rmWRDuRS3jJD9ZeJxqdqfDmPBsUE7wArmoyUMGbCjkoBKxNRtNWchARm4jlaFPrOraB0RQcnl5zM7YXZ0KvboDncI6PaZaixki47zNkO7PcsxAp+dM3FhWW04biqEPawk/OREIBChF6Fwvlq0aT5tPo9hmrF7dVu5161HEpkhTEbi68K8KMGL+1xfCz7KqIum1D99bRhaVoQcF/my9g1KaZUE67/nktB1F0hMYB3Gt2I9oHIsjoJg971nld2Z1uSs/P4J1/Fjh5pvKuYvbMH1ToT7r1eUgYe8HmPeSURQOVdCAEDyqB1hwa/ROeJ2h85Dlvbh2jPs3mFzwgbfBwV2uCd0KHuLgIVRgP4Cl+g4z9t0Ram1timAGUL8n6BPkcaGd0E6AYGbB3L1m1Day71WwATio2P1/RQiul9Rfiet1oAvNrY/XiU8T+1kzhSp+ezK5HI7uq8InPDHrySyOPfvHTG4ksg9offXr1wcM5HpVQ0USehofPmtzB6lWK96D0LEIAo+rVGfaH4gCSZdvGfqSc7B9QBd8WWRgLghBhWYfEETLzdHsJ9tXUF5DnGiDpzh1lVfdIL4IKrbBezIM3jU6W1CMwlgedoX5P3L/tcjVcy/0a17vw17vEzmV46avuPH+uNNXvEIh3bVLf0GpnMrE+9xNx+MScihH3o4h1+O7y2HDJ6uKeuDUILKKTjEcGLW2u9F9WDc13QFoyYrFBWlfBs3WCITE3UNO3y27zzecYHVydIkOzmVN2pMj9ORANGyeDkVpCxJX85n4iKWA+rKqyYW3H7FuedpsbIBvfP8nzKFkrjOrL4rDK7d5S1sw+jMqAcTVI65f3CxETtrEOk/RjcTbRoEEnMgJlY59iDw1lXdhiRdOVOL2+jcXvTcQx5h7x905u0DDuaGEJfHq5u0b0WS4WFul0UWC0BdkXHg8EB/OrUiACWPb8XpsFJASLxeL+XvTkoTUY7peYdV8d0hrN3rPs47TqfbA5WgymjQ9Auojp9k6uVCftklRT88YjQtV0ZyevJmRRg9UBsfn1vkMTIeivYEFiHb5mLVHVy8U+2OX+s7DuUkmjzs/zlPQYZyGVN83FXa403gRnnbu5mUkE+s8U+z3a3B4S2lV8edPBRKn95L7DWmOdEh2pR3/VnK6gdSdHtddY36+bs7wX8Q9J/dZA9oDxJR1yyv4PxnJj1j2b/+K21+CoPiweLdvCK5C8nVYBwOAC/XQj359sZBV9Te08e67
+sidebar_class_name: "get api-method"
+info_path: docs/api/yapay-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve a Payment Intent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/payments/{payment_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieves the details of an existing payment intent
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"payment_id","in":"path","required":true,"description":"The ID of the payment intent","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Payment intent details","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the payment intent","example":"pay_1abc2def3ghi"},"object":{"type":"string","enum":["payment_intent"],"example":"payment_intent"},"amount":{"type":"integer","description":"Payment amount in smallest currency unit","example":10000},"currency":{"type":"string","description":"Three-letter ISO currency code","example":"MXN"},"status":{"type":"string","enum":["pending","succeeded","failed","cancelled"],"description":"Current status of the payment"},"client_secret":{"type":"string","description":"Client secret for frontend confirmation"},"payment_methods":{"type":"array","items":{"type":"string"},"description":"Available payment methods"},"customer":{"type":"object","properties":{"email":{"type":"string","format":"email","description":"Customer's email address","example":"customer@example.com"},"name":{"type":"string","description":"Customer's full name","example":"Juan Pérez"}},"title":"Customer"},"metadata":{"type":"object","additionalProperties":{"type":"string"}},"transaction":{"type":"object","properties":{"id":{"type":"string","description":"Transaction ID","example":"txn_1xyz2abc3def"},"amount":{"type":"integer","description":"Transaction amount"},"currency":{"type":"string","description":"Currency code"},"payment_method":{"type":"string","description":"Payment method used"},"created":{"type":"integer","description":"Unix timestamp"}},"title":"Transaction"},"created":{"type":"integer","description":"Unix timestamp of creation"},"expires_at":{"type":"integer","description":"Unix timestamp of expiration"},"livemode":{"type":"boolean","description":"Whether this is a live mode payment"},"cancelled_at":{"type":"integer","description":"Unix timestamp of cancellation"},"cancellation_reason":{"type":"string","description":"Reason for cancellation"}},"title":"PaymentIntent"}}}},"401":{"description":"Authentication failed","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}},"404":{"description":"Resource not found","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

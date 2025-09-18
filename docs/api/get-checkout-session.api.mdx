@@ -1,0 +1,71 @@
+---
+id: get-checkout-session
+title: "Retrieve a Checkout Session"
+description: "Retrieves the details of a checkout session"
+sidebar_label: "Retrieve a Checkout Session"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV01v3DYQ/SsE0UMLyLt2ktOeaiRB4yJNXH8cWme7mJVmV4wlUuaMDKsL/fdiSEmr/UicAD300JPX4szjzPDN43CjGdakZ3f6dY7pvatZzxOdIaXeVGyc1TN9hewNPiIpzlFlyGAKUm6lQKWdkyIkEutEuwo9iOdFpmd6jdwDXw8mFXgokdHLxhttoUQ90x3EwmQ60UY2roBznWiPD7XxmOkZ+xr3o7vJUV28kXAkuiMBUZpjCXq20dxUYSP2xq51284FmypnCUnWX5yeyp9d/Nd7iH0BdKJTZxktiw9UVWHSkPf0M4nj5nBjt/yMKUsBvFSJTdzWZIfB7Wd5a81DjcpkaNmsDHq1cj5kvE0Un6CsCgFJaXEGy/RFhquX69zoNun3PrIR2roUAvSlm/SI8zbRpcvwa04VNKWUINFUL7cBi2vti2OeK+dLYD3TtTcHab5zxJhtT/H26r0ET3WaItHiWyDbRKdgUyy+1bpLYWGGw/z6UZwTudSAxNm5quiqLt4IHpSutrxgxzDeX2zW6A/gbsRORacQfO092rQ5QthEF8biwjCWNFoG76GRntn7PtBt20B3sdn6IPVou0Q/1GDZcCMKsMvQ2KHPFeYDlNj3ocQiAe9YPAfwZvvfPk4X77FylsaaUth4dqRpuKusMlZRCUWBxKrPWdXWPFNzoQczeoH76+785M/55mX7w+Eh5h7xpEAxVRfXH7dbpNJA7ai435fC753bbj3aRLPh0OrvjcWL/iMxcE1f61dXoQ3KJUrBGFSjCtyQlo2/aQHHK31Q3SfFpkRiKCsJMLgHDdTtFniLtHSuQLCRyI+4py3D6ii7/bujbWX11enZoU6f15yLOEYRViswBWb/nkij984/bxZXv1x/qMwiQiUadiIePhv7CIXJFtK1SKF/gXFRmNLwYBRMxn5BrJEI1t/Qqe/qEuyJR8hgWaAKCKr3ln74gurvovwGaW4s7uNExrfjY3wbQuwP79Xh4V0hudqnqKxjtXK1/f/k/msnF6Lk3HVTXVTGXM/0tL+tp93gQNPNdpZrZTRA/9gPe+FS1jlzRbPptIEKmgm7KVRm+nh2EOild1mdhoaOILpN9jEIbLZ0T5PnsK6j3QA0l8DS2gdRvtvoJYJHLzKiZ3fz8fK1MC2yZGw0VFki6QfNoGTB6FAwCVXjaq/OLy/UPTYK4kQdzRW7e4zqZ+zKBfjuEP6AS2jE68i9g2pYVYaU82uw5m/MFHhpI3X19vpGVd7Y1FQF0kR97ALIgVTlMTMpBwr4rgVPnDdoZbq5vXpPyScLaYoVkwyc5QlaIUmmnFe/Xn/8oDqqq6XLDFKiPHLtLYXFwXgYshMFNlM1ISlisBn4TL27ubn8ZHuTwEGx2+mw6PeIfkmTT3J/CZ1iBc4mp5PTTiwgDrhYghGCQGV+7kkR75wULeF2oBF6Vd4gg29C4StHXIIdWfRvHwVqeAhsHzJ7080gWN/5ZOpoxPjE06oAE27IbnqNTbadzkM7xTbTiZ6NHk3zROeOWIw3myUQ3vqibeXzQ41eOD4X9fFGjjswPjMkvzM9W0FB+y+rcT4/XnUj5E/q2ffW0Wz6UdU2UQJr+U8n+h6b3adfK3KYI2ToQ4zR4DxwcOR6cCFIvw769MvbG922/wAF6zM5
+sidebar_class_name: "get api-method"
+info_path: docs/api/yapay-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve a Checkout Session"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/checkout/sessions/{session_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieves the details of a checkout session
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"path","required":true,"description":"The ID of the checkout session","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Checkout session details","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the session","example":"cs_1abc2def3ghi"},"object":{"type":"string","enum":["checkout.session"]},"mode":{"type":"string","enum":["payment","subscription"]},"url":{"type":"string","format":"uri","description":"Hosted checkout URL"},"success_url":{"type":"string","format":"uri"},"cancel_url":{"type":"string","format":"uri"},"payment_intent":{"type":"string","description":"Associated payment intent ID"},"amount_total":{"type":"integer","description":"Total amount"},"currency":{"type":"string"},"line_items":{"type":"array","items":{"type":"object","required":["name","amount","currency","quantity"],"properties":{"name":{"type":"string","description":"Name of the item"},"description":{"type":"string","description":"Description of the item"},"amount":{"type":"integer","minimum":1,"description":"Unit amount in smallest currency unit"},"currency":{"type":"string","pattern":"^[A-Z]{3}$","description":"Three-letter ISO currency code"},"quantity":{"type":"integer","minimum":1,"description":"Quantity of the item"}},"title":"LineItem"}},"status":{"type":"string","enum":["open","complete","expired"]},"expires_at":{"type":"integer","description":"Unix timestamp of expiration"},"expired":{"type":"boolean"},"livemode":{"type":"boolean"}},"title":"CheckoutSession"}}}},"401":{"description":"Authentication failed","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}},"404":{"description":"Resource not found","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

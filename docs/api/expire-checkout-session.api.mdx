@@ -1,0 +1,71 @@
+---
+id: expire-checkout-session
+title: "Expire a Checkout Session"
+description: "Manually expires a checkout session"
+sidebar_label: "Expire a Checkout Session"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV01v3DYQ/SsE0UMLyLt20pNONZoAcZHGrtc+tM52MUvOWowlkuaHYXWh/14MKWk/E7tADz30ZK84M5wZvvc4XPMA956Xd/znCsWDiYHPCy7RC6dsUEbzkv8KOkJdtwyfrXLoGTDRGzOP3pNVwY1FB+RxIXnJs+kQczZaWXDQYEBHe665hgZ5yfsoCyV5wRXtaSFUvOAOH6NyKHkZXMT9xG4qZBfvmFmxUOGxnLyosAFernlobdooOKXvedfNKba3Rnv0tP7m9JT+7Mbv0+7rlsxHIdD7VazrlhdcGB1QB/IDa2slUvnTL56c14ebm+UXFIGa4KhZQeWtlTxMcL/SW60eIzIlUQe1UujYyrhU9aZYfIbG1hRE+MUZLMUbiau395XiXTHsfWQj1LGh8x/aNxkizruCN0bit5wstA21oOA+LjcJk2t09THPlXENBF7y6NRBmR+MDyg3J3l7/ZGS7/u+eE3IruACtMD6tdZ9CQs1Hua3j+LceyMUUJ69K8uu7OIdxYPGRB0WwQTY3p9s7tEdhLshO5adUvLROdSiPQLagtdK40IFbPzWMjgHBMf97yPcNiS6y4QbkuRb2xX8MYIOKrQkALsIzSx9qTGfoMGBi5QLJbxj8VKAd5tf+3H6fI+1s1FaNYTGsyOkCX1nmdLMN1DX6AMbamZRqxd6TvAIAR2F+/Pu/OSP+fpt993hIVYO8aRGMmUXs8vNFoII1G0195+V8FvvttuPruBBhUT1j0rjxfDRBwjRf4uvxqJOykVKETCpRtK2RNle3xdwvNMH3X1mQTXoAzSWEkzuSQN5twm8ibQ0pkbQGchPuKct4+pWdfv3R9fR6o+nZ4dafR5DReKYRZitQNUo/z2RRueMe9ksr369/2DVIocqOOxkPH5W+glqJRfEWvSJvxBwUatGhdEomWz7JbFG7+H+FUz9EBvQJw5BwrJGliKwwZv48BXV3x8LRKU07sfJiO+2j/F9SnE4vB8PD+8avYlOINMmsJWJ+v+T+6+dXMoyVIaGO2tSdWlGK/l0uK6n/eTgp+vNQNdNsxDQiIDuaRj80uXMqxCsL6fTFiy0k2CmYNX06ewg4StnZBSJ2DkI74r9GB60XJrnyUuxZtluDDSnxER0SZzv1nyJ4NCRnPDybr69PCPEZbRsG43dpkyGoTMpWjI6FE6PrDXRsfOrC/aALQOftD2bs2AeMKug0iuTwveH8TtcQUteR+4fZOMqU54Zdw9a/YWSgSM6sev3sxtmndJC2Rr9hF32CVTgmXUolQgJCq6n4olxCjVNObfXH33xWYMQaIOnwbM5QU1gkcw49svs8hPrIc+WRir0BXMYotM+LY7G48BdMNCSRY+e+QBagpPsw83N1Wc9mCQskt0O07LfE7qln3yme4zglDtwNjmdnPaiAXnQxQYUAQSs+mkARb57BGqPm8GG4GWdwgCuTY0nfDegtyzeJwwzYMONxDZPmr0ZZ5StV76bevAEfA5TW4NK92M/u2aGbWbzRKLMMV7wcufZ1NNsXvCK6Fne8fV6CR5vXd119PkxoiOIz0mEnKLTToCXytP/kpcrqP3+I2u7oO+v+0nyB/bi0+toWcPEqtushJF+8YI/YLv7CuxIFSsEiS7lmA3OEwS3XA/uBaLrKFNXl7Mb3nV/A7n2Nsg=
+sidebar_class_name: "post api-method"
+info_path: docs/api/yapay-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Expire a Checkout Session"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/checkout/sessions/{session_id}/expire"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Manually expires a checkout session
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"path","required":true,"description":"The ID of the checkout session","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Session expired successfully","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","description":"Unique identifier for the session","example":"cs_1abc2def3ghi"},"object":{"type":"string","enum":["checkout.session"]},"mode":{"type":"string","enum":["payment","subscription"]},"url":{"type":"string","format":"uri","description":"Hosted checkout URL"},"success_url":{"type":"string","format":"uri"},"cancel_url":{"type":"string","format":"uri"},"payment_intent":{"type":"string","description":"Associated payment intent ID"},"amount_total":{"type":"integer","description":"Total amount"},"currency":{"type":"string"},"line_items":{"type":"array","items":{"type":"object","required":["name","amount","currency","quantity"],"properties":{"name":{"type":"string","description":"Name of the item"},"description":{"type":"string","description":"Description of the item"},"amount":{"type":"integer","minimum":1,"description":"Unit amount in smallest currency unit"},"currency":{"type":"string","pattern":"^[A-Z]{3}$","description":"Three-letter ISO currency code"},"quantity":{"type":"integer","minimum":1,"description":"Quantity of the item"}},"title":"LineItem"}},"status":{"type":"string","enum":["open","complete","expired"]},"expires_at":{"type":"integer","description":"Unix timestamp of expiration"},"expired":{"type":"boolean"},"livemode":{"type":"boolean"}},"title":"CheckoutSession"}}}},"401":{"description":"Authentication failed","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}},"404":{"description":"Resource not found","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"object","properties":{"type":{"type":"string","enum":["api_error","authentication_error","invalid_request","rate_limit_error","validation_error"]},"message":{"type":"string","description":"Human-readable error message"},"code":{"type":"string","description":"Machine-readable error code"}}}},"title":"Error"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
